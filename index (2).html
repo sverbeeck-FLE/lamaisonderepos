@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="theme-color" content="#131e38"/>
+<title>Au secours ! · Le stage — drie missies</title>
+<style>
+:root{--ink:#182342;--muted:#657188;--navy:#111b34;--violet:#694cda;--violet2:#8c77ee;--line:#e8eaf2;--paper:#fff;--bg:#f6f5fb;--mint:#c7f7e8;--orange:#ffc879;--danger:#c7355b;--good:#127655}
+*{box-sizing:border-box}html{font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Arial,sans-serif}body{margin:0;background:radial-gradient(ellipse at 85% 5%,#ece5ff 0,transparent 34%),radial-gradient(ellipse at 10% 55%,#e8f7f3 0,transparent 33%),var(--bg);color:var(--ink);min-height:100vh}button,input{font:inherit}button{cursor:pointer}.shell{max-width:1000px;margin:0 auto;padding:22px 20px 60px}.top{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:26px}.brand{display:flex;gap:9px;align-items:center;font-size:13px;font-weight:850;letter-spacing:.09em;text-transform:uppercase;color:#5d54aa}.logo{display:grid;place-items:center;background:#ded5ff;border-radius:13px;width:39px;height:39px;font-size:20px}.flag{font-size:13px;color:#4c5a74;background:white;border:1px solid var(--line);padding:10px 14px;border-radius:100px}.hero{display:grid;grid-template-columns:1.18fr .82fr;gap:26px;align-items:stretch}.heroMain{padding:42px 38px;border-radius:28px;background:var(--navy);color:white;position:relative;overflow:hidden;min-height:475px}.heroMain:after{content:"";position:absolute;width:240px;height:240px;border-radius:50%;background:#9b83ff;opacity:.16;bottom:-110px;right:-80px}.labelTop{display:inline-flex;align-items:center;gap:8px;border:1px solid #514e89;background:#272951;padding:8px 12px;border-radius:100px;color:#d8d0ff;font-size:12px;font-weight:750;letter-spacing:.08em}.hero h1{font-weight:850;letter-spacing:-.065em;font-size:clamp(40px,6vw,64px);line-height:1.02;margin:27px 0 19px}.hero h1 em{font-style:normal;color:#a998ff}.hero p{font-size:16px;line-height:1.62;color:#d4d9ea;max-width:470px;margin:0 0 30px}.heroArt{background:#f8ebd9;border-radius:28px;padding:25px;display:flex;flex-direction:column;justify-content:space-between;min-height:475px;position:relative;overflow:hidden}.poster{width:100%;min-height:285px;border-radius:20px;background:#e2d6ff;display:flex;align-items:center;justify-content:center;font-size:118px;position:relative}.poster .star{position:absolute;font-size:36px;right:28px;top:29px}.poster .speech{position:absolute;right:15px;bottom:20px;background:#fff;padding:11px 15px;font-size:15px;font-weight:850;transform:rotate(5deg);border-radius:14px;box-shadow:0 7px 15px #4334631c}.smallCaps{font-size:11px;font-weight:850;color:#775f42;letter-spacing:.13em;text-transform:uppercase}.heroArt h2{margin:7px 0 5px;font-size:23px;line-height:1.18;letter-spacing:-.04em}.heroArt p{font-size:13px;color:#746d6c;margin:0;line-height:1.4}.btn{border:0;border-radius:14px;padding:15px 23px;display:inline-flex;justify-content:center;align-items:center;gap:9px;font-size:15px;font-weight:850;transition:transform .15s,filter .15s}.btn:hover:not(:disabled){transform:translateY(-1px);filter:brightness(1.03)}.btn:disabled{opacity:.55;cursor:not-allowed}.primary{background:#a8efc9;color:#163f39}.purple{background:var(--violet);color:white}.ghost{background:white;border:1px solid var(--line);color:var(--ink)}.outline{background:transparent;border:1px solid #c7c3e9;color:#5141a9}.micro{display:flex;gap:13px;flex-wrap:wrap;font-size:12px;color:#b9bfce;margin-top:21px}.micro span{display:flex;gap:6px;align-items:center}.overview{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:18px}.overview .tile{padding:20px 16px;background:#fff;border:1px solid #eeedf4;border-radius:17px}.tile .emoji{font-size:25px}.tile h3{font-size:14px;margin:14px 0 5px;line-height:1.3}.tile p{font-size:12px;line-height:1.5;color:var(--muted);margin:0}.game{max-width:790px;margin:0 auto}.hidden{display:none!important}.gamehead{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:14px}.back{background:transparent;border:0;color:#645b8e;font-weight:800;padding:8px 0}.score{background:#fff;border:1px solid var(--line);padding:10px 14px;border-radius:99px;font-weight:800;color:#4c4277;font-size:13px}.progressTrack{width:100%;height:9px;border-radius:20px;background:#e6e4f1;overflow:hidden;margin-bottom:22px}.progressFill{height:100%;background:linear-gradient(90deg,#6956db,#b4a6ff);transition:width .4s;border-radius:20px}.qcard{border:1px solid #e8e5f0;border-radius:25px;background:white;box-shadow:0 14px 50px #27214612;padding:32px}.qtop{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:19px}.mission{color:#5e50bd;font-weight:850;letter-spacing:.07em;text-transform:uppercase;font-size:12px}.counter{font-size:12px;color:var(--muted);font-weight:750}.chat{background:#f7f4ff;border:1px solid #ede6ff;padding:19px 20px 19px 60px;border-radius:18px;position:relative;color:#453476;font-size:18px;font-weight:780;line-height:1.4;margin-bottom:23px}.chat:before{content:"👵";position:absolute;left:16px;top:15px;font-size:25px}.qcard h2{font-size:clamp(23px,3.6vw,31px);letter-spacing:-.04em;line-height:1.19;margin:0 0 9px}.subtitle{font-size:13px;color:var(--muted);line-height:1.5;margin:0 0 20px}.options{display:grid;gap:11px}.option{display:flex;text-align:left;gap:14px;align-items:center;padding:17px 18px;min-height:65px;border:1.5px solid #e9e6f1;border-radius:15px;background:#fff;color:var(--ink);font-weight:700;line-height:1.4}.option:hover:not(:disabled){border-color:#aca0fa;background:#faf9ff}.letter{display:grid;place-items:center;flex-shrink:0;width:29px;height:29px;background:#f2f0f9;color:#777093;border-radius:10px;font-size:12px;font-weight:900}.option.right{border-color:#41b78d;background:#edfff5}.option.wrong{border-color:#f1aab8;background:#fff5f7}.inputRow{display:flex;gap:10px;flex-wrap:wrap}.answerInput{flex:1;min-width:195px;outline:none;font-size:17px;border-radius:14px;padding:16px 18px;border:1.5px solid #dcd8eb}.answerInput:focus{border-color:var(--violet);box-shadow:0 0 0 3px #ebe7ff}.feedback{margin-top:23px;border-radius:16px;padding:16px 18px;display:none;line-height:1.55;font-size:14px}.feedback.good{display:block;background:#e9fcf2;color:#17674e;border:1px solid #b3efd2}.feedback.bad{display:block;background:#fff2e9;color:#8b522d;border:1px solid #f9d5b6}.feedback strong{display:block;font-size:16px;margin-bottom:4px}.actions{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;margin-top:24px}.actions .next{margin-left:auto}.hintBox{font-size:13px;color:#786789;background:#f5f2fe;padding:12px 14px;border-radius:12px;margin-top:14px;border:1px solid #e8e1fc}.end{background:white;border:1px solid var(--line);border-radius:25px;padding:36px;max-width:750px;margin:0 auto;text-align:center;box-shadow:0 15px 50px #28224411}.endIcon{font-size:65px}.end h1{font-size:40px;letter-spacing:-.055em;line-height:1.1;margin:10px 0}.end p{color:var(--muted);line-height:1.6}.result{background:#f4f0ff;border-radius:17px;padding:23px;margin:25px auto;max-width:320px}.result strong{font-size:44px;color:#5038af}.result small{display:block;color:#7668ac;font-size:13px}.endButtons{display:flex;gap:9px;flex-wrap:wrap;justify-content:center}.foot{margin-top:31px;color:#7c8294;font-size:12px;text-align:center}.noprint{display:block}@media(max-width:720px){.shell{padding:15px 14px 30px}.hero{grid-template-columns:1fr}.heroMain{padding:33px 25px;min-height:unset}.hero h1{font-size:46px}.heroArt{min-height:unset;display:none}.overview{grid-template-columns:repeat(2,1fr)}.qcard{padding:23px 18px}.chat{font-size:16px}.inputRow .btn{width:100%}.actions{align-items:stretch}.actions button{flex:1}.actions .next{margin-left:0}.end{padding:28px 21px}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{transition:none!important;animation:none!important}}
+.helpActions{display:flex;flex-wrap:wrap;gap:9px}.linkAction{border:1px solid #e1dfed;background:#fff;color:#58507b;padding:11px 13px;border-radius:12px;font-size:13px;font-weight:800}.linkAction:hover{background:#f9f7ff}.playGuide{font-size:12px;color:var(--muted);margin:11px 0 0}.option:disabled{cursor:default}.option.wrong:disabled{opacity:1}
+
+.phasePills{display:flex;gap:9px;flex-wrap:wrap;margin:0 0 17px}.phasePill{display:inline-flex;align-items:center;gap:7px;font-size:12px;font-weight:800;padding:9px 12px;border-radius:100px;background:#edeaf5;color:#77718e;border:1px solid #e2deee}.phasePill.active{background:#ded6ff;color:#5139ac;border-color:#c7b9ff}.phasePill.done{background:#e1f8ec;color:#20674e;border-color:#c5eddb}.storyNote{background:#fff9e9;border:1px solid #f3dfaf;border-radius:16px;padding:13px 16px;margin-bottom:17px;color:#74501a;font-size:13px;line-height:1.5}.storyNote strong{color:#5c4319}.speaker{font-size:11px;letter-spacing:.08em;text-transform:uppercase;font-weight:850;color:#7461b1;margin:0 0 8px}.chat{padding:18px 20px 18px 61px}.chat[data-speaker="nurse"]{background:#ecf9f8;border-color:#caeeed;color:#245f63}.chat[data-speaker="nurse"]:before{content:"👩‍⚕️"}.chat[data-speaker="call"]{background:#fff4e5;border-color:#ffe0b1;color:#805123}.chat[data-speaker="call"]:before{content:"🔔"}.chat[data-speaker="resident"]:before{content:"👵"}.hintBox{display:none}.hintBox:not(.hidden){display:block}.storyOutcome{display:none;margin-top:13px;background:#f4faf6;border:1px solid #d1ecd9;color:#2b6550;border-radius:13px;padding:12px 15px;font-size:13px;line-height:1.5}.storyOutcome:not(.hidden){display:block}.typeTip{font-size:12px;color:var(--muted);margin:10px 0 0}.chipPool{display:flex;flex-wrap:wrap;gap:9px;margin-top:9px}.chip{border:1px solid #d8d0f5;background:#f5f2ff;color:#4c3b83;font-weight:750;padding:12px 14px;border-radius:12px}.chip:hover:not(:disabled){border-color:#9683ee;background:#eee8ff}.chip:disabled{opacity:.43;cursor:default}.buildResponse{display:flex;align-items:center;gap:8px;flex-wrap:wrap;border:2px dashed #d8d1eb;border-radius:15px;padding:12px;min-height:62px;background:#fbfaff;margin:6px 0 17px}.buildResponse .chosen{border:1px solid #b3a3ee;background:#e9e2ff;color:#41347c;border-radius:10px;padding:10px 12px;font-weight:700}.buildPlaceholder{color:#9a92aa;font-size:14px}.builderButtons{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}.builderButtons button{min-height:42px}.transitionCard{max-width:760px;margin:0 auto;overflow:hidden;border-radius:28px;background:white;border:1px solid var(--line);box-shadow:0 14px 50px #27214612}.transitionTop{background:#171e3d;color:#fff;padding:29px 34px 33px;position:relative}.transitionTop::after{content:"🔔";position:absolute;font-size:90px;opacity:.17;right:25px;top:6px}.transitionTop .labelTop{font-size:11px}.transitionTop h1{font-size:clamp(31px,5vw,49px);letter-spacing:-.05em;line-height:1.09;margin:23px 0 12px;max-width:550px}.transitionTop p{color:#dbe2fa;line-height:1.6;margin:0;max-width:500px}.transitionBody{padding:29px 34px 34px}.transitionBody p{line-height:1.7;color:#59657e;margin:9px 0 20px}.transScore{display:inline-block;border-radius:10px;background:#edfbf4;border:1px solid #d1f1e1;padding:10px 14px;color:#206d55;font-weight:800;font-size:13px}.storySteps{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:20px}.storySteps span{border-radius:20px;background:#f6f3ff;padding:8px 12px;font-size:12px;color:#654c9a;font-weight:700}.endBreakdown{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:13px auto 18px}.endBreakdown span{background:#f6f5fb;border:1px solid #ece9f4;border-radius:11px;padding:10px 14px;font-size:13px;color:#584b8a}.finishNote{max-width:530px;margin:16px auto;font-size:13px!important}.option{white-space:normal}.option:focus-visible,.chip:focus-visible,.btn:focus-visible,.linkAction:focus-visible{outline:3px solid #f1b94c;outline-offset:2px}.foot{line-height:1.5}.phaseEnd{display:none}.phaseEnd:not(.hidden){display:block}
+@media(max-width:720px){.transitionTop,.transitionBody{padding:25px 22px}.gamehead{flex-wrap:wrap}.phasePills{gap:6px}.phasePill{padding:8px 10px;font-size:11px}.storySteps span{font-size:11px}.chat{padding-left:53px}}
+
+/* Missie 3: gesprekskeuzes veranderen de reactie van de bewoner. */
+.teacherPreview{display:block;margin-top:13px;background:none;border:0;padding:8px 0;color:#d6cfff;font-size:13px;font-weight:700;text-decoration:underline;text-underline-offset:3px}.teacherPreview:hover{color:#fff}
+.conversationMemory{background:#f0f0f8;border:1px solid #dedbed;border-radius:16px;padding:13px 16px;margin:0 0 17px;display:grid;gap:9px}
+.conversationMemoryTitle{font-size:11px;letter-spacing:.1em;font-weight:850;color:#79738f;text-transform:uppercase}
+.memoryExchange{display:flex;gap:7px;align-items:start;flex-direction:column;padding:10px 12px;background:white;border-radius:12px;font-size:13px;line-height:1.5}
+.memoryExchange strong{font-size:11px;color:#6a5abc;letter-spacing:.04em}.memoryExchange .residentAnswer{color:#3a6870}
+.branchTag{font-size:11px;font-weight:850;color:#17674e;letter-spacing:.03em;margin-top:5px}
+.chat[data-speaker="man"]{background:#edf4ff;border-color:#d7e7ff;color:#2a4a79}.chat[data-speaker="man"]:before{content:"👴"}
+.option .letter{min-width:29px}.phasePill{white-space:nowrap}
+@media(max-width:720px){.overview{grid-template-columns:1fr!important}.phasePills{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px}.phasePill{justify-content:center;text-align:center;padding:9px 6px;font-size:10px;white-space:normal}.memoryExchange{font-size:12px}}
+</style>
+</head>
+<body>
+<main class="shell">
+  <div class="top"><div class="brand"><span class="logo" aria-hidden="true">✚</span> LE STAGE · FRANÇAIS A2</div><div class="flag">🇫🇷 Maison de repos</div></div>
+  <section id="welcome">
+    <div class="hero">
+      <div class="heroMain">
+        <div class="labelTop">✦ INTERACTIEF TAALSPEL</div>
+        <h1>Au secours !<br><em>Un patient francophone !</em></h1>
+        <p>Je begint aan je stage in een woonzorgcentrum. Leer de belangrijkste woorden, help Madame Dupont en voer daarna een echt gesprek met Monsieur Bernard. Jouw keuzes beïnvloeden zijn reacties.</p>
+        <button type="button" id="start" class="btn primary">Start je shift <span aria-hidden="true">→</span></button>
+        <button type="button" id="previewThird" class="teacherPreview">Test alleen missie 3 (docent) ↗</button>
+        <div class="micro"><span>⏱ 20–25 minuten</span><span>🎯 34 uitdagingen</span><span>🗣 A2-Frans</span></div>
+      </div>
+      <div class="heroArt"><div class="poster">👩‍⚕️<span class="star">✦</span><span class="speech">Driiiing ! 🔔</span></div><div><div class="smallCaps">VAN WOORDEN NAAR ECHTE GESPREKKEN</div><h2>Drie missies. Eén stagedag.</h2><p>Herken de woorden, begrijp de bewoner en reageer beleefd en veilig.</p></div></div>
+    </div>
+    <div class="overview" style="grid-template-columns:repeat(3,minmax(0,1fr))">
+      <div class="tile"><div class="emoji">📚</div><h3>Missie 1 · Les bases</h3><p>16 bestaande vragen, verdeeld over kennismaken, behoeften, bewegen en familie.</p></div>
+      <div class="tile"><div class="emoji">🔔</div><h3>Missie 2 · La sonnette</h3><p>9 stappen in een verhaal. Begrijp wat er gebeurt en formuleer de juiste reactie in het Frans.</p></div>
+      <div class="tile"><div class="emoji">💬</div><h3>Missie 3 · Un vrai dialogue</h3><p>9 interactieve gespreksbeurten. Kies je woorden, zie hoe de bewoner reageert en geef informatie door.</p></div>
+    </div>
+  </section>
+  <section id="game" class="game hidden" aria-live="polite">
+    <div class="gamehead"><button type="button" class="back" id="homeBtn">← Startscherm</button><div class="score" id="scoreBox">⭐ 0 punten</div></div>
+    <div class="phasePills"><span id="phasePill1" class="phasePill active">1 · Woordenschat</span><span id="phasePill2" class="phasePill">2 · De bel gaat</span><span id="phasePill3" class="phasePill">3 · Het gesprek</span></div>
+    <div class="progressTrack" aria-label="Voortgang"><div class="progressFill" id="bar" style="width:0%"></div></div>
+    <div class="storyNote hidden" id="storyNote"></div>
+    <div class="conversationMemory hidden" id="conversationMemory" aria-label="Vorige gespreksbeurten"></div>
+    <div class="qcard">
+      <div class="qtop"><span class="mission" id="mission">MISSIE 1</span><span class="counter" id="counter">1 / 16</span></div>
+      <div class="speaker" id="speaker">Madame Dupont zegt</div>
+      <div class="chat" id="scene" data-speaker="resident"></div>
+      <h2 id="prompt"></h2><p class="subtitle" id="subprompt"></p>
+      <div id="answerArea"></div>
+      <div class="hintBox hidden" id="hint"></div>
+      <div class="feedback" id="feedback" role="status" aria-live="polite"></div>
+      <div id="storyOutcome" class="storyOutcome hidden"></div>
+      <p class="playGuide">Na een fout antwoord krijg je een hint en een tweede kans. Na twee foute pogingen verschijnt de oplossing en kun je verdergaan.</p>
+      <div class="actions"><div class="helpActions">
+        <button type="button" class="btn outline" id="hintBtn">💡 Extra hulp (−2 pt)</button>
+        <button type="button" class="linkAction" id="revealBtn">Toon oplossing</button>
+        <button type="button" class="linkAction" id="skipBtn">Sla over →</button>
+      </div><button type="button" class="btn purple next hidden" id="nextBtn">Verder →</button></div>
+    </div>
+  </section>
+  <section id="transition" class="hidden">
+    <div class="transitionCard">
+      <div class="transitionTop"><div class="labelTop">MISSIE 1 VOLTOOID</div><h1>🔔 Driiiing !<br>Chambre 12 appelle.</h1><p>Net wanneer je denkt dat je klaar bent, gaat het oproepsignaal. Madame Dupont heeft je nodig.</p></div>
+      <div class="transitionBody"><span id="transScore" class="transScore">Goed gedaan!</span><h2>Missie 2 · La sonnette</h2><p>Je hoort de bewoner, probeert te begrijpen wat er mis is en formuleert zelf Franse reacties. Bij een fout krijg je een hint en kun je opnieuw antwoorden. Pas daarna gaat het verhaal verder.</p><div class="storySteps"><span>🔔 Comprendre</span><span>💬 Répondre</span><span>🩺 Prévenir l’infirmière</span></div><button type="button" class="btn purple" id="continueStory">Beantwoord de oproep →</button></div>
+    </div>
+  </section>
+  <section id="transition3" class="hidden">
+    <div class="transitionCard">
+      <div class="transitionTop"><div class="labelTop">MISSIE 2 VOLTOOID</div><h1>👴 Bonjour !<br>Monsieur Bernard vous attend.</h1><p>De verpleegkundige heeft Madame Dupont geholpen. Maar je stagedag zit er nog niet op: in de gang spreekt een andere bewoner je aan.</p></div>
+      <div class="transitionBody"><span id="transScore2" class="transScore">Goed gedaan!</span><h2>Missie 3 · Un vrai dialogue</h2><p>Dit keer kies je zelf hoe je antwoordt. Soms zijn meerdere Franse reacties goed. De bewoner reageert anders op jouw aanpak, en het volgende gesprek houdt rekening met wat je hebt gezegd. Blijf vriendelijk, luister en schakel de verpleegkundige in wanneer dat nodig is.</p><div class="storySteps"><span>👂 Écouter</span><span>💬 Choisir ses mots</span><span>🤝 Rassurer</span><span>🩺 Transmettre</span></div><button type="button" class="btn purple" id="continueDialogue">Ga naar kamer 8 →</button></div>
+    </div>
+  </section>
+  <section id="finish" class="end hidden"><div class="endIcon" id="endEmoji">🏆</div><h1 id="endTitle">Bravo !</h1><p id="endText"></p><div class="result"><strong id="endPoints">0</strong><small id="endDetails">van 250 punten</small></div><div id="endBreakdown" class="endBreakdown"></div><p class="finishNote">Je antwoorden blijven in dit browservenster; de resultaten worden niet naar de leerkracht verstuurd. Bij medische situaties volg je altijd de stageafspraken en verwittig je de verpleegkundige.</p><div class="endButtons"><button type="button" class="btn purple" id="againBtn">🔁 Opnieuw spelen</button><button type="button" class="btn ghost hidden" id="mistakesBtn">🎯 Oefen je fouten</button></div></section>
+  <p class="foot">Versie 5 · 16 woordenschatvragen + 9 oproepsituaties + 9 interactieve gesprekstappen · Typen via knop of Enter · Offline speelbaar</p>
+</main>
+<script>
+const baseQuestions = [
+ {mission:1,topic:'Première rencontre',scene:'Bonjour ! Je suis Madame Dupont. Et vous ?',prompt:'Hoe stel je jezelf voor als stagiair?',sub:'Kies de vriendelijkste en correctste Franse reactie.',type:'choice',options:['Bonjour, je suis stagiaire aujourd’hui.','Bonsoir, je suis la fille de votre voisin.','Non merci, je ne parle pas français.'],correct:0,explain:'Je suis stagiaire = ik ben stagiair(e). Begroet de bewoner beleefd.'},
+ {mission:1,topic:'Première rencontre',scene:'Le résident attend dans sa chambre.',prompt:'Hoe zeg je “de bewoner” in het Frans?',sub:'Typ één correcte vertaling, met lidwoord.',type:'input',accepted:['le résident','la résidente','le resident','la residente'],display:'le résident / la résidente',hint:'le r… of la r…',explain:'Un résident / une résidente woont in een maison de repos.'},
+ {mission:1,topic:'Première rencontre',scene:'Je suis une personne âgée, mais je reste active !',prompt:'Wat betekent “une personne âgée”?',sub:'Kies de juiste betekenis.',type:'choice',options:['Een gepensioneerde verpleegkundige','Een oudere persoon','Een bezoeker'],correct:1,explain:'Une personne âgée = een oudere persoon.'},
+ {mission:1,topic:'Première rencontre',scene:'Je suis retraitée depuis cinq ans.',prompt:'Wat betekent “retraitée” hier?',sub:'Denk aan de levensfase van de bewoonster.',type:'choice',options:['Met pensioen','Verdwaald','Op vakantie'],correct:0,explain:'Un retraité / une retraitée = een gepensioneerde.'},
+ {mission:2,topic:'Petits besoins',scene:'Excusez-moi, j’ai soif !',prompt:'Wat wil deze bewoonster zeggen?',sub:'Luister in je hoofd naar de Franse zin.',type:'choice',options:['Ik heb honger.','Ik heb dorst.','Ik heb het koud.'],correct:1,explain:'J’ai soif = ik heb dorst. J’ai faim = ik heb honger.'},
+ {mission:2,topic:'Petits besoins',scene:'La résidente a soif. Elle regarde la carafe.',prompt:'Wat is de beleefdste vraag?',sub:'Je wil een glas water aanbieden.',type:'choice',options:['Voulez-vous un verre d’eau ?','Vous êtes une bouteille d’eau ?','Pourquoi vous êtes ici ?'],correct:0,explain:'Voulez-vous un verre d’eau ? = Wilt u een glas water?'},
+ {mission:2,topic:'Petits besoins',scene:'Aujourd’hui, je suis très fatiguée.',prompt:'Hoe zegt een man: “Ik ben moe”?',sub:'Typ de volledige Franse zin.',type:'input',accepted:['je suis fatigué','je suis fatigue'],display:'Je suis fatigué.',hint:'Je suis f…',explain:'Fatigué (mannelijk) / fatiguée (vrouwelijk) = moe.'},
+ {mission:2,topic:'Petits besoins',scene:'J’ai froid. Brrr !',prompt:'Wat kun je beleefd aanbieden?',sub:'De bewoner heeft het koud.',type:'choice',options:['Voulez-vous une couverture ?','Voulez-vous une fourchette ?','Voulez-vous un déambulateur ?'],correct:0,explain:'Une couverture = een deken. J’ai froid = ik heb het koud.'},
+ {mission:3,topic:'On bouge !',scene:'Je voudrais me lever, s’il vous plaît.',prompt:'Wat betekent “se lever”?',sub:'De bewoner wil iets doen.',type:'choice',options:['Gaan liggen','Rechtstaan / opstaan','Zich wassen'],correct:1,explain:'Se lever = opstaan. Controleer tijdens stage altijd welke hulp je mag bieden.'},
+ {mission:3,topic:'On bouge !',scene:'Vous pouvez vous asseoir ici.',prompt:'Wat betekent “s’asseoir”?',sub:'De stagiair wijst naar een stoel.',type:'choice',options:['Gaan zitten','Rechtstaan','Naar huis gaan'],correct:0,explain:'S’asseoir = gaan zitten. Asseyez-vous = gaat u zitten.'},
+ {mission:3,topic:'On bouge !',scene:'Mon fauteuil roulant est près de la porte.',prompt:'Wat is een “fauteuil roulant”?',sub:'Kies de juiste betekenis.',type:'choice',options:['Een rollator','Een rolstoel','Een zetel'],correct:1,explain:'Un fauteuil roulant = een rolstoel.'},
+ {mission:3,topic:'On bouge !',scene:'Où est mon déambulateur ?',prompt:'Wat zoekt de bewoner?',sub:'Dit hulpmiddel gebruik je om te stappen.',type:'choice',options:['Een wandelhulpmiddel / rollator','Een tandenborstel','Een nachtkastje'],correct:0,explain:'Un déambulateur = een loophulpmiddel, vaak een rollator.'},
+ {mission:4,topic:'Visite surprise',scene:'Mes petits-enfants arrivent cet après-midi.',prompt:'Wie komt op bezoek?',sub:'Vertaal les petits-enfants.',type:'choice',options:['De kleinkinderen','De ouders','De kinderen'],correct:0,explain:'Les petits-enfants = de kleinkinderen.'},
+ {mission:4,topic:'Visite surprise',scene:'Ma fille vient me voir à seize heures.',prompt:'Wie komt er om 16 uur?',sub:'Let op de betekenis van fille.',type:'choice',options:['De zus','De dochter','De kleindochter'],correct:1,explain:'Ma fille = mijn dochter. Mon fils = mijn zoon.'},
+ {mission:4,topic:'Visite surprise',scene:'La famille cherche la maison de repos.',prompt:'Hoe vertaal je “maison de repos”?',sub:'Geef één Nederlandse vertaling.',type:'input',accepted:['woonzorgcentrum','rusthuis','een woonzorgcentrum','een rusthuis'],display:'woonzorgcentrum / rusthuis',hint:'woon…centrum',explain:'Maison de repos wordt in België gebruikt voor een rusthuis of woonzorgcentrum.'},
+ {mission:4,topic:'Visite surprise',scene:'Je ne me sens pas bien…',prompt:'Wat zeg je als stagiair het best?',sub:'De bewoonster voelt zich niet goed. Kies een veilige reactie.',type:'choice',options:['Je vais prévenir l’infirmière.','Ce n’est pas mon problème.','Prenez ce médicament.'],correct:0,explain:'Je vais prévenir l’infirmière = ik zal de verpleegkundige verwittigen. Geef als stagiair niet zelfstandig medicatie.'}
+];
+
+/* MISSIE 2 · LA SONNETTE: elke stap is één deel van hetzelfde gesprek.
+   type = choice / input / build. Bij input zijn meerdere formuleringen mogelijk. */
+const storyQuestions = [
+ {id:'s1',phase:2,topic:'La sonnette',speaker:'call',by:'Oproepsignaal · Kamer 12',context:'Je hoort de bel en loopt naar kamer 12. Madame Dupont spreekt je aan.',scene:'Excusez-moi ! Vous pouvez venir, s’il vous plaît ?',prompt:'Wat vraagt Madame Dupont?',sub:'Begrijp eerst de boodschap vóór je reageert.',type:'choice',options:['Of je even kunt komen.','Of je haar dochter kunt bellen.','Of ze morgen naar huis mag.'],correct:0,hint:'“Venir” betekent “komen”.',explain:'Vous pouvez venir ? = Kunt u komen?',outcome:'Je nadert haar bed en luistert aandachtig.'},
+ {id:'s2',phase:2,topic:'Comprendre le problème',speaker:'resident',by:'Madame Dupont',context:'Ze wijst naar het toilet en kijkt je ongerust aan.',scene:'Je dois aller aux toilettes, mais je n’arrive pas à me lever.',prompt:'Wat is precies het probleem?',sub:'Kies de volledige betekenis.',type:'choice',options:['Ze wil iets drinken en zoekt haar bril.','Ze moet naar het toilet maar geraakt niet zelfstandig recht.','Ze wil meteen naar buiten wandelen.'],correct:1,hint:'“Aller aux toilettes” = naar het toilet gaan. “Je n’arrive pas à...” = het lukt me niet om...',explain:'Ze moet naar het toilet, maar kan niet zelf opstaan.',outcome:'Je begrijpt de hulpvraag. Je laat haar niet zonder begeleiding opstaan.'},
+ {id:'s3',phase:2,topic:'Répondre en français',speaker:'resident',by:'Madame Dupont',context:'Je mag als stagiair geen onveilige verplaatsing alleen uitvoeren. Je stelt haar gerust en verwittigt een verpleegkundige.',scene:'Vous pouvez m’aider à me lever ?',prompt:'Bouw een veilige, beleefde Franse reactie.',sub:'Klik de woordgroepen in de juiste volgorde. Er zitten twee afleiders bij.',type:'build',chunks:['tout de suite.','Levez-vous','prévenir','Je vais','toute seule.','l’infirmière'],answer:['Je vais','prévenir','l’infirmière','tout de suite.'],hint:'Begin met “Je vais…” en zeg dat je de verpleegkundige gaat verwittigen.',explain:'Je vais prévenir l’infirmière tout de suite. = Ik zal meteen de verpleegkundige verwittigen.',outcome:'Madame Dupont knikt. Ze weet dat er hulp onderweg is.'},
+ {id:'s4',phase:2,topic:'Rassurer la résidente',speaker:'resident',by:'Madame Dupont',context:'Terwijl je hulp regelt, vertelt ze waarom ze ongerust is.',scene:'J’ai peur de tomber…',prompt:'Welke reactie is vriendelijk én geruststellend?',sub:'Je kiest een antwoord dat haar gevoelens ernstig neemt.',type:'choice',options:['Allez, ce n’est rien !','Je comprends. Je reste avec vous.','Levez-vous vite !'],correct:1,hint:'Zoek de zin met “Ik begrijp het” en “Ik blijf bij u”.',explain:'Je comprends. Je reste avec vous. = Ik begrijp het. Ik blijf bij u.',outcome:'Madame Dupont ontspant een beetje doordat je rustig blijft.'},
+ {id:'s5',phase:2,topic:'Nouveau problème !',speaker:'resident',by:'Madame Dupont',context:'Plots verandert de situatie. Madame Dupont legt haar hand tegen haar voorhoofd.',scene:'Je me sens mal… J’ai la tête qui tourne.',prompt:'Wat vertelt ze nu?',sub:'Dit is belangrijke informatie voor de verpleegkundige.',type:'choice',options:['Ze heeft honger.','Ze is haar kamer kwijt.','Ze voelt zich niet goed en is duizelig.'],correct:2,hint:'“La tête qui tourne” betekent letterlijk dat het hoofd draait.',explain:'J’ai la tête qui tourne = ik ben duizelig. Je me sens mal = ik voel me niet goed.',outcome:'Je ziet dat dit meteen aan de verpleegkundige moet worden gemeld.'},
+ {id:'s6',phase:2,topic:'Transmettre l’information',speaker:'nurse',by:'De verpleegkundige',context:'De verpleegkundige komt bij de deur en vraagt wat er aan de hand is.',scene:'Qu’est-ce qui se passe avec Madame Dupont ?',prompt:'Vertel in het Frans: “Mevrouw Dupont is duizelig.”',sub:'Typ één korte Franse zin. Begin bijvoorbeeld met “Madame Dupont...”',type:'input',accepted:['Madame Dupont a des vertiges','Madame Dupont a la tête qui tourne','Elle a des vertiges','Elle a la tête qui tourne','Madame Dupont est étourdie','Elle est étourdie','Madame Dupont se sent étourdie','Elle se sent étourdie','Madame Dupont est prise de vertiges'],display:'Madame Dupont a des vertiges.',hint:'Je kunt zeggen: “Madame Dupont a des v…” of “Elle a la tête qui t…”',explain:'Avoir des vertiges / avoir la tête qui tourne = duizelig zijn.',outcome:'De verpleegkundige begrijpt je melding en komt dichterbij.'},
+ {id:'s7',phase:2,topic:'Répondre à une question',speaker:'nurse',by:'De verpleegkundige',context:'De verpleegkundige wil weten of er al iets gebeurd is.',scene:'Est-ce qu’elle est tombée ?',prompt:'Wat vraagt de verpleegkundige?',sub:'Kies de correcte Nederlandse betekenis.',type:'choice',options:['Heeft ze haar medicatie genomen?','Is ze gevallen?','Voelt ze zich beter?'],correct:1,hint:'“Tomber” betekent “vallen”.',explain:'Est-ce qu’elle est tombée ? = Is ze gevallen?',outcome:'Je weet wat de verpleegkundige wil controleren.'},
+ {id:'s8',phase:2,topic:'Répondre clairement',speaker:'nurse',by:'De verpleegkundige',context:'Je hebt gezien dat Madame Dupont niet is gevallen.',scene:'Alors, elle est tombée ou non ?',prompt:'Bouw het antwoord: “Nee, ze is niet gevallen.”',sub:'Klik de woordgroepen in de juiste volgorde.',type:'build',chunks:['tombée.','Oui,','elle','Non,','n’est pas','est'],answer:['Non,','elle','n’est pas','tombée.'],hint:'Begin met “Non”, gebruik “ne ... pas” rond de werkwoordsvorm.',explain:'Non, elle n’est pas tombée. = Nee, ze is niet gevallen.',outcome:'De verpleegkundige heeft nu de nodige informatie en neemt de begeleiding over.'},
+ {id:'s9',phase:2,topic:'Fin de l’intervention',speaker:'resident',by:'Madame Dupont',context:'De verpleegkundige is bij Madame Dupont. Ze bedankt je. Je sluit het gesprek professioneel af.',scene:'Merci beaucoup de m’avoir écoutée.',prompt:'Hoe antwoord je passend als stagiair?',sub:'Kies een warme, beleefde Franse reactie.',type:'choice',options:['Avec plaisir, Madame. Prenez soin de vous.','Ce n’est pas mon problème.','Bon, je pars.'],correct:0,hint:'Zoek een reactie die “graag gedaan” zegt en belangstelling toont.',explain:'Avec plaisir = met plezier. Prenez soin de vous = zorg goed voor uzelf.',outcome:'✅ Missie geslaagd: je hebt geluisterd, Frans gesproken, gerustgesteld en de verpleegkundige geïnformeerd.'}
+];
+
+/* MISSIE 3 · Un vrai dialogue. Meerdere veilige antwoorden zijn mogelijk.
+   De keuze verandert de reactie van Monsieur Bernard, de vondst van de bril
+   en enkele latere gespreksregels. */
+const dialogueQuestions = [
+ {id:'d1',phase:3,topic:'Prendre contact',speaker:'man',by:'Monsieur Bernard · kamer 8',context:'Een bewoner spreekt je op de gang aan. Hij ziet er ongerust uit.',scene:'Excusez-moi... Je ne retrouve plus mes lunettes !',prompt:'Hoe begin je het gesprek?',sub:'Er zijn twee goede antwoorden. Kies hoe jij als stagiair zou reageren.',type:'dialogue',options:['Bonjour, Monsieur Bernard. Je peux vous aider ?','Vous cherchez vos lunettes ? On va regarder ensemble.','Je n’ai pas le temps.'],valid:[0,1],correct:0,replies:['Merci ! C’est gentil de m’écouter.','Ah, très bien ! Cherchons ensemble.'],wrongReply:'Mais... j’ai vraiment besoin d’aide.',hint:'Begin vriendelijk en bied hulp aan. Er zijn twee passende reacties.',explain:'“Je peux vous aider ?” en “On va regarder ensemble” zijn allebei vriendelijk en duidelijk.'},
+ {id:'d2',phase:3,topic:'Comprendre le problème',speaker:'man',by:'Monsieur Bernard',context:'Monsieur Bernard vertelt waarom zijn bril belangrijk is.',scene:'Ma fille m’a laissé un message, mais sans mes lunettes, je ne peux pas le lire.',prompt:'Waarom wil hij zijn bril vinden?',sub:'Luister naar het probleem achter de vraag.',type:'choice',options:['Hij kan zijn krant niet vinden.','Hij wil een bericht van zijn dochter lezen.','Hij heeft hoofdpijn.'],correct:1,hint:'“Ma fille” = mijn dochter; “lire un message” = een bericht lezen.',explain:'Hij kan het bericht van zijn dochter niet lezen zonder zijn bril.',outcome:'Je begrijpt waarom de bril voor hem belangrijk is.'},
+ {id:'d3',phase:3,topic:'Chercher ensemble',speaker:'man',by:'Monsieur Bernard',context:'Je mag samen met de bewoner rondkijken. Kies waar jullie eerst zoeken.',scene:'J’avais mes lunettes il y a cinq minutes...',prompt:'Wat stel je voor?',sub:'Twee mogelijkheden zijn goed. Je keuze verandert waar het verhaal verdergaat.',type:'dialogue',options:['Regardons derrière le journal sur la table.','Je vais regarder à côté du fauteuil.','Ce n’est pas important.'],valid:[0,1],correct:0,replies:['Ah, les voilà ! Elles étaient derrière mon journal !','Oh, je les vois ! Elles étaient à côté du fauteuil !'],wrongReply:'Mais je ne peux pas lire le message sans mes lunettes...',hint:'Stel voor om op een concrete plaats te zoeken.',explain:'Beide zoekvoorstellen zijn bruikbaar. Het vervolg past zich aan jouw keuze aan.'},
+ {id:'d4',phase:3,topic:'Rendre les lunettes',speaker:'man',by:'Monsieur Bernard',context:'Je hebt de bril gevonden.',scene:'Vous avez trouvé mes lunettes ?',prompt:'Zeg in het Frans: “Hier is uw bril, meneer.”',sub:'Typ een korte, beleefde zin. Verschillende formuleringen worden aanvaard.',type:'input',accepted:['Voici vos lunettes monsieur','Voici vos lunettes','Voila vos lunettes monsieur','Voila vos lunettes','Les voici monsieur','Les voici','J ai trouve vos lunettes','J ai trouve vos lunettes monsieur','Je les ai trouvees','Je les ai trouvees monsieur','Je vous donne vos lunettes'],display:'Voici vos lunettes, Monsieur.',hint:'Begin met “Voici vos l…” of “Les voici”.',explain:'Voici vos lunettes, Monsieur. = Hier is uw bril, meneer.',outcome:'Merci ! Maintenant, je peux lire le message de ma fille.'},
+ {id:'d5',phase:3,topic:'Écouter une inquiétude',speaker:'man',by:'Monsieur Bernard',context:'Hij leest het bericht en kijkt opnieuw ongerust.',scene:'Ma fille devait venir à quinze heures. Il est déjà seize heures. Je suis inquiet.',prompt:'Hoe reageer je op zijn ongerustheid?',sub:'Kies een warme, realistische reactie. Je weet nog niet waarom zijn dochter te laat is.',type:'dialogue',options:['Je comprends. Je vais demander des nouvelles à l’équipe.','Je peux rester un moment avec vous, si vous voulez.','Elle arrive sûrement tout de suite, promis !'],valid:[0,1],correct:0,replies:['Merci. J’aimerais savoir si elle va bien.','Merci, ça me fait du bien de ne pas être seul.'],wrongReply:'Vous êtes sûr ? Mais vous ne savez pas où elle est...',hint:'Beloof niets wat je niet kunt weten. Toon begrip of bied aan om bij hem te blijven.',explain:'Begrip tonen en hulp aanbieden is beter dan zonder zekerheid beloven dat iemand komt.'},
+ {id:'d6',phase:3,topic:'Éviter une situation risquée',speaker:'man',by:'Monsieur Bernard',context:'Hij staat plots op. Je merkt dat hij erg ongerust is en richting de uitgang wil.',scene:'Je vais sortir la chercher tout seul !',prompt:'Wat zeg je nu?',sub:'Kies een beleefde reactie die de bewoner geruststelt en de situatie veilig houdt.',type:'dialogue',options:['Je comprends. Restez ici avec moi, s’il vous plaît.','Je reste avec vous et je vais appeler l’infirmière.','D’accord, allez-y tout seul !'],valid:[0,1],correct:1,replies:['D’accord. Vous pouvez rester un peu avec moi ?','Merci. Je préfère attendre avec vous.'],wrongReply:'Vous voulez vraiment que je sorte tout seul ?',hint:'Laat hem niet alleen vertrekken. Blijf rustig bij hem en betrek het team.',explain:'Blijf rustig en volg het stageprotocol. Laat de bewoner niet alleen vertrekken als dat onveilig kan zijn.'},
+ {id:'d7',phase:3,topic:'Informer l’infirmière',speaker:'nurse',by:'De verpleegkundige',context:'Een verpleegkundige komt erbij. Je geeft beknopt door wat er aan de hand is.',scene:'Qu’est-ce qui se passe avec Monsieur Bernard ?',prompt:'Bouw de melding: “Meneer Bernard is ongerust en wil naar buiten.”',sub:'Klik op de juiste Franse woordgroepen, in de goede volgorde.',type:'build',chunks:['veut sortir.','est inquiet','Madame Dupont','et','Monsieur Bernard','a faim'],answer:['Monsieur Bernard','est inquiet','et','veut sortir.'],hint:'Begin met de naam. “Être inquiet” = ongerust zijn; “vouloir sortir” = naar buiten willen.',explain:'Monsieur Bernard est inquiet et veut sortir. = Meneer Bernard is ongerust en wil naar buiten.',outcome:'Merci de me prévenir. Je vais vérifier si nous avons des nouvelles de sa fille.'},
+ {id:'d8',phase:3,topic:'Donner une information fiable',speaker:'nurse',by:'De verpleegkundige',context:'De verpleegkundige heeft gecontroleerd: zijn dochter heeft gebeld.',scene:'Sa fille a téléphoné. Elle arrive à dix-sept heures.',prompt:'Vertel Monsieur Bernard in het Frans: “Uw dochter komt om 17 uur.”',sub:'Typ de Franse zin. Je mag 17 of dix-sept schrijven.',type:'input',accepted:['Votre fille arrive à dix-sept heures','Votre fille arrive a dix sept heures','Votre fille arrive à 17 heures','Votre fille arrive à 17h','Votre fille arrive à 17 h','Elle arrive à dix-sept heures','Elle arrive à 17 heures','Elle arrive à 17h','Elle arrive à 17 h','Votre fille va arriver à 17 heures','Votre fille va arriver à dix sept heures','Votre fille viendra à 17 heures','Votre fille vient à 17 heures','Votre fille arrive à dix-sept heures Monsieur','Votre fille arrive à 17 heures Monsieur'],display:'Votre fille arrive à dix-sept heures.',hint:'Begin met “Votre fille arrive à…” en voeg het tijdstip toe.',explain:'Votre fille arrive à dix-sept heures. = Uw dochter komt om 17 uur.',outcome:'Ah, merci ! Je suis rassuré. Je vais l’attendre ici.'},
+ {id:'d9',phase:3,topic:'Terminer avec bienveillance',speaker:'man',by:'Monsieur Bernard',context:'Hij is gerustgesteld en bedankt je. Sluit het gesprek beleefd af.',scene:'Merci beaucoup d’avoir pris le temps de m’aider.',prompt:'Hoe sluit je het gesprek af?',sub:'Er zijn twee gepaste reacties mogelijk.',type:'dialogue',options:['Avec plaisir, Monsieur Bernard. Bonne visite !','Je vous en prie. À bientôt !','Enfin, vous avez compris !'],valid:[0,1],correct:0,replies:['Merci ! Vous avez été très gentil avec moi.','À bientôt ! Merci encore pour votre aide.'],wrongReply:'Oh... ce n’est pas très aimable.',hint:'Kies een beleefde afsluiting met “graag gedaan” of “tot binnenkort”.',explain:'“Avec plaisir” en “Je vous en prie” zijn allebei beleefde reacties.'}
+];
+const base = baseQuestions.map((q,i)=>({...q,id:'b'+(i+1),phase:1,chapter:q.mission,by:'Madame Dupont',speaker:'resident',context:'',outcome:''}));
+const allQuestions=[...base,...storyQuestions,...dialogueQuestions];
+const $=id=>document.getElementById(id);
+const norm=s=>String(s).normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[.!?’,’'\-]/g,' ').replace(/\s+/g,' ').trim();
+const accepted=(q,value)=>q.accepted.some(a=>norm(a)===norm(value));
+let phase=1, round=[],index=0,points=0,phase1Score=0,phase2Score=0,phase3Score=0,attempts=0,answered=false,training=false,hintsUsed=false,mistakes=new Set();
+let dialogueHistory=[],dialogueMood=0,glassesLocation='journal',lastReassurance=0,previewOnly=false;
+let selectedChunks=[];
+function show(section){for(const name of ['welcome','game','transition','transition3','finish'])$(name).classList.toggle('hidden',name!==section);window.scrollTo(0,0);}
+function scoreUpdate(){$('scoreBox').textContent='⭐ '+points+' punten';}
+function updatePhases(){
+ for(let n=1;n<=3;n++){
+  const el=$('phasePill'+n);
+  el.className='phasePill '+(training?'':phase===n?'active':phase>n?'done':'');
+ }
+ $('phasePill1').textContent=training?'🎯 Herhaling':'1 · Woordenschat';
+ $('phasePill2').textContent=training?'Moeilijke':'2 · De bel gaat';
+ $('phasePill3').textContent=training?'vragen':'3 · Het gesprek';
+}
+function resetConversation(){dialogueHistory=[];dialogueMood=0;glassesLocation='journal';lastReassurance=0;}
+function currentScene(q){
+ if(q.id==='d4')return glassesLocation==='fauteuil'?'Oh, mes lunettes ! Elles étaient à côté du fauteuil !':'Oh, mes lunettes ! Elles étaient derrière mon journal !';
+ if(q.id==='d6')return lastReassurance===1?'Je suis encore inquiet... Je vais sortir la chercher tout seul !':'Je ne peux plus attendre... Je vais sortir la chercher tout seul !';
+ if(q.id==='d9')return dialogueMood>=3?'Grâce à vous, je me sens beaucoup mieux. Merci !':'Merci beaucoup d’avoir pris le temps de m’aider.';
+ return q.scene;
+}
+function currentContext(q){
+ if(q.id==='d4')return glassesLocation==='fauteuil'?'Je hebt de bril teruggevonden naast de zetel.':'Je hebt de bril achter de krant op tafel gevonden.';
+ if(q.id==='d7')return 'De verpleegkundige komt erbij. Vertel niet alleen wat er gebeurd is, maar ook dat hij het woonzorgcentrum wil verlaten.';
+ return q.context||'';
+}
+function paintHistory(){
+ const panel=$('conversationMemory');panel.replaceChildren();
+ const visible=phase===3&&!training&&dialogueHistory.length>0;
+ panel.classList.toggle('hidden',!visible);
+ if(!visible)return;
+ panel.append(textNode('div','conversationMemoryTitle','💬 Jullie vorige gespreksbeurten'));
+ dialogueHistory.slice(-2).forEach(turn=>{
+  const b=textNode('div','memoryExchange','');
+  b.append(textNode('strong','','JIJ · '+turn.you));
+  b.append(textNode('span','residentAnswer',turn.who+' · '+turn.reply));
+  panel.append(b);
+ });
+}
+function storyReply(q,value,solved=false){
+ if(q.phase!==3)return q.outcome||'';
+ if(q.type==='dialogue'){
+  const chosen=solved?q.correct:value;
+  if(q.id==='d3')glassesLocation=chosen===1?'fauteuil':'journal';
+  if(q.id==='d5')lastReassurance=chosen;
+  if(q.id==='d1'||q.id==='d5'||q.id==='d6'||q.id==='d9')dialogueMood+=chosen===q.correct?2:1;
+  return q.replies[chosen]||q.replies[q.correct];
+ }
+ return q.outcome||'';
+}
+function recordConversation(q,value,solved=false){
+ const reply=storyReply(q,value,solved);
+ if(q.phase!==3||training||q.type==='choice')return reply;
+ const userAnswer=q.type==='dialogue'?q.options[solved?q.correct:value]:q.type==='choice'?q.options[solved?q.correct:value]:q.type==='build'?q.answer.join(' '):(solved?q.display:String(value));
+ dialogueHistory.push({you:userAnswer,reply,who:q.speaker==='nurse'?'De verpleegkundige':'Monsieur Bernard'});
+ return reply;
+}
+function start(review=false){
+ training=review;
+ round=review?allQuestions.filter(q=>mistakes.has(q.id)):base.slice();
+ if(!review)mistakes.clear();
+ previewOnly=false;
+ phase=review?0:1; index=0;points=0;phase1Score=0;phase2Score=0;phase3Score=0;resetConversation();
+ if(!round.length){show('welcome');return;}
+ render();show('game');
+}
+function beginStory(){phase=2;round=storyQuestions.slice();index=0;render();show('game');}
+function beginDialogue(){phase=3;round=dialogueQuestions.slice();index=0;resetConversation();render();show('game');}
+function previewDialogue(){previewOnly=true;training=false;mistakes.clear();points=0;phase1Score=0;phase2Score=0;phase3Score=0;beginDialogue();}
+function textNode(tag,cls,value){const el=document.createElement(tag);if(cls)el.className=cls;el.textContent=value;return el;}
+function render(){
+ const q=round[index];if(!q)return;
+ answered=false;attempts=0;hintsUsed=false;selectedChunks=[];
+ scoreUpdate();updatePhases();
+ $('counter').textContent=(index+1)+' / '+round.length;
+ $('mission').textContent=training?'HERHALING · '+q.topic:'MISSIE '+q.phase+' · '+q.topic;
+ $('bar').style.width=(100*index/round.length)+'%';
+ $('speaker').textContent= q.by;
+ $('scene').dataset.speaker=q.speaker||'resident';
+ $('scene').textContent='“'+currentScene(q)+'”';
+ $('prompt').textContent=q.prompt;$('subprompt').textContent=q.sub;
+ $('storyNote').classList.toggle('hidden',q.phase===1);
+ $('storyNote').replaceChildren(textNode('strong','','📍 '+(q.phase===2?'KAMER 12':'KAMER 8')+' · '+(index+1)+' / '+round.length+'  '), document.createTextNode(currentContext(q)));
+ paintHistory();
+ $('hint').classList.add('hidden');$('hint').textContent='';
+ $('feedback').className='feedback';$('feedback').textContent='';
+ $('storyOutcome').textContent='';$('storyOutcome').classList.add('hidden');
+ $('hintBtn').classList.remove('hidden');$('hintBtn').disabled=false;
+ $('revealBtn').classList.remove('hidden');$('skipBtn').classList.remove('hidden');
+ $('nextBtn').classList.add('hidden');
+ $('nextBtn').textContent=training?(index===round.length-1?'Bekijk je herhaling →':'Volgende vraag →'):(index===round.length-1?(phase===1?'Ontgrendel missie 2 →':phase===2?'Ontgrendel missie 3 →':'Bekijk je resultaat →'):'Ga verder →');
+ const area=$('answerArea');area.replaceChildren();
+ if(q.type==='choice'||q.type==='dialogue'){
+  const opts=textNode('div','options','');
+  q.options.forEach((label,i)=>{
+   const b=document.createElement('button');b.className='option';b.type='button';
+   b.append(textNode('span','letter','ABC'[i]||String(i+1)),textNode('span','',label));
+   b.addEventListener('click',()=>check(i));opts.appendChild(b);
+  });area.appendChild(opts);
+ } else if(q.type==='input') {
+  const row=textNode('div','inputRow','');
+  const input=document.createElement('input');input.id='typed';input.type='text';
+  input.className='answerInput';input.placeholder='Typ je Franse antwoord…';
+  input.setAttribute('aria-label','Jouw antwoord');input.setAttribute('aria-describedby','feedback');
+  input.autocomplete='off';input.spellcheck=false;
+  const button=textNode('button','btn purple','Controleer antwoord');button.type='button';
+  const submit=()=>{
+   if(answered)return;
+   const value=input.value.trim();
+   if(!value){feedback(false,'✏️ Typ eerst een antwoord.','Vul een Franse zin in en druk op Controleer antwoord of Enter.');input.focus();return;}
+   check(value);
+  };
+  button.addEventListener('click',submit);
+  input.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();submit();}});
+  row.append(input,button);area.append(row,textNode('p','typeTip','Je mag hoofdletters en accenten gebruiken, maar dat hoeft niet. Meerdere gebruikelijke formuleringen worden herkend.'));
+ } else if(q.type==='build') {
+  const response=textNode('div','buildResponse','');response.id='buildResponse';response.setAttribute('aria-live','polite');
+  const pool=textNode('div','chipPool','');pool.id='chipPool';
+  q.chunks.forEach((chunk,i)=>{
+   const b=textNode('button','chip',chunk);b.type='button';b.dataset.chunk=String(i);
+   b.addEventListener('click',()=>{if(answered)return;selectedChunks.push(i);paintBuilder();});pool.appendChild(b);
+  });
+  const buttons=textNode('div','builderButtons','');
+  const reset=textNode('button','btn ghost','Wis je zin ↺');reset.type='button';reset.id='resetBuilder';reset.addEventListener('click',()=>{selectedChunks=[];paintBuilder();});
+  const verify=textNode('button','btn purple','Controleer zin');verify.type='button';verify.id='checkBuilder';verify.addEventListener('click',()=>{
+   if(answered)return;
+   if(!selectedChunks.length){feedback(false,'✏️ Bouw eerst een zin.','Klik op de paarse woordgroepen om een Franse zin te maken.');return;}
+   check(selectedChunks.map(i=>q.chunks[i]).join(' '));
+  });
+  buttons.append(reset,verify);area.append(textNode('p','typeTip','Klik op de woordgroepen. Een gekozen woordgroep kun je weer verwijderen.'),response,pool,buttons);
+  paintBuilder();
+ }
+}
+function paintBuilder(){
+ const area=$('buildResponse'),pool=$('chipPool');if(!area||!pool)return;
+ area.replaceChildren();
+ if(!selectedChunks.length)area.appendChild(textNode('span','buildPlaceholder','Jouw zin verschijnt hier...'));
+ selectedChunks.forEach((n,position)=>{
+  const b=textNode('button','chosen',round[index].chunks[n]+' ×');b.type='button';b.title='Verwijder woordgroep';
+  b.addEventListener('click',()=>{if(answered)return;selectedChunks.splice(position,1);paintBuilder();});area.appendChild(b);
+ });
+ pool.querySelectorAll('button').forEach(btn=>btn.disabled=selectedChunks.includes(Number(btn.dataset.chunk))||answered);
+}
+function feedback(good,title,details){
+ const panel=$('feedback');panel.className='feedback '+(good?'good':'bad');
+ panel.replaceChildren(textNode('strong','',title),textNode('span','',details));
+}
+function correctValue(q){return q.type==='choice'||q.type==='dialogue'?q.options[q.correct]:q.type==='build'?q.answer.join(' '):q.display;}
+function updatePhasePoints(earned){if(!training){if(phase===1)phase1Score+=earned;else if(phase===2)phase2Score+=earned;else if(phase===3)phase3Score+=earned;}}
+function hint(q,isAutomatic=false){
+ if(answered)return;
+ $('hint').textContent=(isAutomatic?'🔎 Tip voor je tweede poging: ':'💡 Hint: ')+(q.hint||'Herlees de Franse zin en let op de context.');
+ $('hint').classList.remove('hidden');
+ if(!isAutomatic&&!hintsUsed){
+  hintsUsed=true;
+  const available=training?points:(phase===1?phase1Score:phase===2?phase2Score:phase3Score);
+  const cost=Math.min(2,available);
+  points-=cost;updatePhasePoints(-cost);scoreUpdate();$('hintBtn').disabled=true;
+ }
+ if(isAutomatic)$('hintBtn').disabled=true;
+}
+function complete(q,good,solved=false,value=null){
+ answered=true;
+ $('hintBtn').classList.add('hidden');$('revealBtn').classList.add('hidden');$('skipBtn').classList.add('hidden');
+ $('answerArea').querySelectorAll('button,input').forEach(el=>el.disabled=true);
+ if(q.type==='choice'||q.type==='dialogue'){
+  const b=$('answerArea').querySelectorAll('.option');const chosen=q.type==='dialogue'&&!solved&&q.valid.includes(value)?value:q.correct;if(b[chosen])b[chosen].classList.add('right');
+ }
+ $('bar').style.width=(100*(index+1)/round.length)+'%';
+ $('nextBtn').classList.remove('hidden');
+ if(q.phase===2||q.phase===3){
+  const reply=q.phase===3?recordConversation(q,value,solved):q.outcome;
+  $('storyOutcome').textContent=solved?'💡 Je hebt de oplossing bekeken. '+(q.phase===3&&q.type!=='choice'?'De reactie: '+reply:'Het verhaal kan verder.'):(q.phase===3&&q.type==='choice'?'📖 '+reply:q.phase===3?'💬 '+(q.id==='d7'?'De verpleegkundige':'Monsieur Bernard')+': '+reply:reply);
+  $('storyOutcome').classList.remove('hidden');
+ }
+ $('nextBtn').focus({preventScroll:true});
+}
+function check(value){
+ if(answered)return;
+ const q=round[index];
+ const good=q.type==='choice'?value===q.correct:q.type==='dialogue'?q.valid.includes(value):q.type==='build'?norm(value)===norm(q.answer.join(' ')):accepted(q,value);
+ if(good){
+  const earned=attempts===0?10:5;
+  points+=earned;updatePhasePoints(earned);scoreUpdate();
+  feedback(true,'✅ Bien joué ! +'+earned+' punten',q.explain);
+  complete(q,true,false,value);return;
+ }
+ attempts++;mistakes.add(q.id);
+ if(q.type==='choice'||q.type==='dialogue'){
+  const b=$('answerArea').querySelectorAll('.option')[value];if(b){b.classList.add('wrong');b.disabled=true;}
+ }
+ if(attempts===1){
+  feedback(false,'🔎 Nog niet helemaal juist.',(q.phase===3&&q.wrongReply?'Monsieur Bernard: « '+q.wrongReply+' » ':'')+'Je krijgt een hint en een tweede kans.');
+  hint(q,true);
+  if(q.type==='input'){$('typed').focus();$('typed').select();}
+ }else{
+  feedback(false,'💡 Dit is een goed antwoord:',correctValue(q)+' — '+q.explain);
+  complete(q,false,true);
+ }
+}
+function reveal(){if(answered)return;const q=round[index];mistakes.add(q.id);feedback(false,'💡 Oplossing',correctValue(q)+' — '+q.explain);complete(q,false,true);}
+function skip(){if(answered)return;mistakes.add(round[index].id);goNext();}
+function goNext(){
+ if(index<round.length-1){index++;render();return;}
+ if(training){finish();return;}
+ if(phase===2){$('transScore2').textContent='⭐ Missie 2: '+phase2Score+' / '+(storyQuestions.length*10)+' punten';show('transition3');return;}
+ if(phase===1){$('transScore').textContent='⭐ Missie 1: '+phase1Score+' / '+(base.length*10)+' punten';show('transition');}
+ else finish();
+}
+function finish(){
+ show('finish');const total=training?round.length*10:previewOnly?dialogueQuestions.length*10:allQuestions.length*10;
+ $('endPoints').textContent=points;$('endDetails').textContent='van '+total+' punten';
+ const ratio=points/Math.max(1,total);
+ $('endEmoji').textContent=ratio>=.85?'🏆':ratio>=.55?'🎉':'💪';
+ $('endTitle').textContent=training?'Herhaling voltooid!':previewOnly?'Proefmissie voltooid!':ratio>=.85?'Incroyable !':ratio>=.55?'Bravo !':'On continue !';
+ $('endText').textContent=training?'Je hebt je moeilijke woorden en gesprekszinnen opnieuw geoefend.':previewOnly?'Je hebt alleen missie 3 getest. Start de volledige shift om alle drie de missies te spelen.':ratio>=.85?'Je begreep de bewoner uitstekend en reageerde professioneel in het Frans.':ratio>=.55?'Je hielp Madame Dupont vooruit en oefende echte stagegesprekken. Bekijk zeker je moeilijke zinnen.':'Je hebt de shift doorlopen. Herhaal de woorden en reacties die nog lastig waren.';
+ const box=$('endBreakdown');box.replaceChildren();
+ if(!training&&!previewOnly){box.append(textNode('span','','📚 Woordenschat: '+phase1Score+' / '+base.length*10),textNode('span','','🔔 De bel gaat: '+phase2Score+' / '+storyQuestions.length*10),textNode('span','','💬 Het gesprek: '+phase3Score+' / '+dialogueQuestions.length*10));}
+ if(previewOnly){box.append(textNode('span','','💬 Het gesprek: '+phase3Score+' / '+dialogueQuestions.length*10));}
+ if(!training){box.append(textNode('p','branchTag',dialogueMood>=6?'👴 Monsieur Bernard voelde zich gehoord en werd steeds rustiger.':'👴 Je hebt naar Monsieur Bernard geluisterd en passende reacties geoefend.'));}
+ $('mistakesBtn').classList.toggle('hidden',training||mistakes.size===0);
+}
+$('start').addEventListener('click',()=>start(false));
+$('previewThird').addEventListener('click',previewDialogue);
+$('homeBtn').addEventListener('click',()=>show('welcome'));
+$('continueStory').addEventListener('click',beginStory);
+$('continueDialogue').addEventListener('click',beginDialogue);
+$('nextBtn').addEventListener('click',goNext);
+$('hintBtn').addEventListener('click',()=>hint(round[index],false));
+$('revealBtn').addEventListener('click',reveal);
+$('skipBtn').addEventListener('click',skip);
+$('againBtn').addEventListener('click',()=>start(false));
+$('mistakesBtn').addEventListener('click',()=>start(true));
+
+</script>
+</body>
+</html>
